@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "light font";
+    src: url("../fonts/Inter_18pt-Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: "basic font";
+    src: url("../fonts/Inter_18pt-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "bold font";
+    src: url("../fonts/Inter_28pt-ExtraBold.ttf") format("truetype");
+}
+
+/* variables couleurs pour les chartes */
+:root {
+    --vFill: #872b9513;
+    --vBorder: #872b9548;
+    --vFull: #872B95;
+    --pFill: #EF305413;
+    --pBorder: #EF305448;
+    --pFull: #EF3054;
+    --yFill: #FFC53A13;
+    --yBorder: #FFC53A48;
+    --yFull: #FFC53A;
+}
+
+/* 
+Page container - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+*/
+#global-container {
+    width: 85%;
+    margin-left: 10rem;
+    color: #171821;
+}
+
+/* Header */
+#header {
+    width: 100%;
+
+    margin-left: 1rem;
+    margin-top: 0.25rem;
+
+    color: #606060;
+
+    border-bottom: 1px solid #6060602c;
+}
+.global-title {
+    font-family: "light font";
+    font-size: 0.80rem;
+    font-weight: 100;
+
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.page-title {
+    font-family: "basic font";
+    font-size: 1.25rem;
+
+    margin-bottom: 0.5rem;
+}
+.page-img {
+    position: absolute;
+
+    width: 10%;
+
+    border-radius: 0.5rem;
+    border: 1px solid #6060602c;
+
+    top: 1rem;
+    right: 1rem;
+}
+
+/* Facts section p1*/
+.facts-section {
+    margin-left: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem; 
+    padding: 1rem;
+
+    font-size: 1rem;
+
+    color: #171821;
+}
+.fact li {
+    list-style-type: disc;
+    margin-left: 3rem;
+
+    font-size: 0.75rem;
+    padding-bottom: 0.2rem;
+}
+.section-title {
+    font-family: "bold font";
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Four charts section p3 */
+.four-charts-section {
+    margin-left: 2rem;
+}
+.four-charts-section h2{
+    margin-bottom: 0;
+}
+
+/* Descriptive text section all pages */
+.text-section {
+    margin-left: 2rem;
+    text-align: justify;
+    margin-bottom: 3rem;
+}
+.text-section p {
+    margin-bottom: 1rem;
+}
+
+/* Disclaimer  */
+.disclaimer {
+    font-family: 'light font';
+    font-style: italic;
+    font-size: 0.1 rem;
+}

@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "basic font";
+    src: url("../fonts/Inter_18pt-Regular.ttf") format("truetype");
+}
+
+html, body {
+    width: 100vw;
+    height: 100%;
+    font-size: 16px;
+
+    font-family: "basic font";
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* 
+Side Pannel - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+*/
+#side-pannel {
+    height: 100%;
+
+    background-color: #171821;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: fixed;
+}
+
+#side-pannel.opened {
+    width: 10rem;
+}
+
+#side-pannel.closed {
+    width: 5rem;
+}
+
+/* LOGO  */
+#logo {
+    width: 60%;
+    aspect-ratio: 1;
+
+    margin-top: 1rem;  
+    margin-left: 0.75rem;  
+}
+
+#logo-circle {
+    width: 80%;
+    aspect-ratio: 1;
+
+    border: 0.2rem solid #fc5e6b75;
+    border-radius: 50%;
+    box-shadow: 0 0 0.5rem #ef676563;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-img {
+    width: 80%;
+    height: 80%;
+}
+
+/* List */
+#side-menu {
+    color: #CABAC8;
+    font-family: "basic font";
+    letter-spacing: 0.05rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 80%;
+}
+
+#side-menu.opened {
+    margin-top: 5rem;
+}
+
+#side-menu.closed {
+    margin-top: 8rem;
+}
+
+#menu-list {
+    text-align: center;
+    list-style-type: none;  
+    font-size: calc(.2rem + 1vw);
+}
+
+#menu-list li {
+    margin-bottom: 1.5rem;
+    padding: 0.75rem;
+}
+
+#settings {
+    position: absolute;
+    bottom: 1rem;
+    font-size: calc(.2rem + 1vw);
+    padding: 0.25rem;
+}
+
+#menu-list li:hover, #settings:hover {
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 0.25rem;
+    color: #171821;
+
+    cursor: pointer;
+}
+
+/* Close / Open button */
+#pannel-button {
+    cursor: pointer;
+    color: #CABAC8;
+
+    background-color: #29263B;
+
+    position: absolute;
+    margin-top: 55vh;
+
+    padding: 0.25rem;
+    border: none;
+    border-radius: 0.2rem;
+}
+
+#pannel-button.close {
+    margin-left: 10rem;
+}
+
+#pannel-button.open {
+    margin-left: 5rem;
+}
+
+#pannel-button:hover {
+    background-color: #474457;
+}
+
+#pannel-button .click {
+    color: #3c3853;
+    transform: translateX(-0.1rem);
+    transform: translateY(-0.1rem);
+}
+
+#pannel-button:active {
+    top: 1px;
+}
+

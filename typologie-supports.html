@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typologie des Supports</title>
+
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/charts.css">
+
+    <script src="scripts/pannel-button.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/p2-charts.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0/dist/chartjs-plugin-datalabels.min.js"></script>
+    <script src="https://kit.fontawesome.com/6e0742cd0f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+     <!-- Side Pannel -->
+     <div id="side-pannel" class="opened">
+        <!-- Logo -->
+        <div id="logo">
+            <div id="logo-circle">
+                <img src="images/logo.png" alt="logo" id="logo-img">
+            </div>
+        </div>
+
+        <!-- Menu Text -->
+        <div id="side-menu" class="opened">
+            <ul id="menu-list">
+                <li onclick="goVueDensemble()">Vue d'ensemble</li>
+                <li onclick="goTypology()">Typologie des supports</li>
+                <li onclick="goImpact()">Impact sur l'apprentissage</li>
+             </ul>
+             <h1 id="settings">Paramètres</h1>
+        </div>
+
+         <!-- Open/Close Button -->
+          <button id="pannel-button" class="close">
+            <i id="pannel-button-content" class="fa-solid fa-angle-left"></i>
+          </button>
+    </div>
+
+    <!-- Page Container -->
+    <div id="global-container">
+        <!-- Header -->
+         <div id="header">
+            <h2 class="global-title">Impact des jeux et supports ludiques sur l’enseignement du FLE</h2>
+            <h2 class="page-title">Typologie des supports</h2>
+            <img src="images/p2-img.jpg" alt="descriptive image with people talking" class="page-img">
+         </div>
+
+        <!-- Bars Chart -->
+        <div class="charts-section">
+            <h2 class="section-title">Classement par fréquence d'usage</h2>
+            <div id="use-frequency" class="chart-card">
+                <div id='p2-frequency-chart-container'>
+                    <canvas id="p2-frequency-chart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wheat visuals -->
+        <div class="wheat-charts-section">
+            <h2 class="section-title">Usages les plus adaptés</h2>
+            <div class="wheat-charts-container">
+                
+                <div id="role-games" class="wheat-chart-card">
+                    <div class="wheat-chart">
+                        <div class="wheat-normal-container">
+                            <h2 class="wheat normal collaboration">Collaboration</h2>
+                            <h2 class="wheat normal memory">Mémorisation</h2>
+                        </div>
+                        <div class="wheat-reversed-container">
+                            <h2 class="wheat reversed interaction">Interaction</h2>
+                            <h2 class="wheat reversed spontaneity">Spontanéité</h2>
+                        </div>
+                    </div>
+                    <div class="chart-caption">
+                        Jeux de rôles
+                    </div>
+                </div>
+
+                <div id="digital-games" class="wheat-chart-card">
+                    <div class="wheat-chart">
+                        <div class="wheat-normal-container">
+                            <h2 class="wheat normal motivation">Engagement</h2>
+                            <h2 class="wheat normal thinking">Réflexion</h2>
+                        </div>
+                        <div class="wheat-reversed-container">
+                            <h2 class="wheat reversed memory">Mémorisation</h2>
+                            <h2 class="wheat reversed spontaneity">Spontanéité</h2>
+                        </div>
+                    </div>
+                    <div class="chart-caption">
+                        Jeux numériques
+                    </div>
+                </div>
+
+                <div id="board-games" class="wheat-chart-card">
+                    <div class="wheat-chart">
+                        <div class="wheat-normal-container">
+                            <h2 class="wheat normal collaboration">Collaboration</h2>
+                            <h2 class="wheat normal memory">Mémorisation</h2>
+                        </div>
+                        <div class="wheat-reversed-container">
+                            <h2 class="wheat reversed spontaneity">Spontanéité</h2>
+                            <h2 class="wheat reversed interaction">Interaction</h2>
+                        </div>
+                    </div>
+                    <div class="chart-caption">
+                        Jeux de société
+                    </div>
+                </div>
+                
+            </div>
+           </div>
+
+        <!-- Text Section 3 -->
+        <div class="text-section">
+            <h2 class="section-title">À chaque objectif son support</h2>
+            <p>
+                <b>Les jeux et supports ludiques</b> utilisés dans l'enseignement du FLE <b>se diversifient en fonction des objectifs</b> pédagogiques. 
+            </p>
+            <p>
+                <b>Les jeux de rôle</b>, présents dans 60% des études, se révèlent <b>particulièrement efficaces</b> pour développer l'<b>expression orale</b> et favoriser la <b>communication spontanée</b>. 
+            </p>
+            <p>
+                <b>Les jeux numériques</b>, quant à eux, <b>captivent par leur interactivité</b>, et <b>motivent d'autant plus</b> les apprenants. 
+            </p>
+
+            <!-- Disclaimer -->
+            <p class="disclaimer">
+                Ces données sont fictives et ont uniquement servi comme contenu pour nourrir ce site.
+            </p>
+        </div>
+
+</body>
+
+</html>

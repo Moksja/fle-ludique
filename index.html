@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue d'ensemble</title>
+
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/charts.css">
+
+    <script src="scripts/pannel-button.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/p1-charts.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="https://kit.fontawesome.com/6e0742cd0f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Side Pannel -->
+    <div id="side-pannel" class="opened">
+        <!-- Logo -->
+        <div id="logo">
+            <div id="logo-circle">
+                <img src="images/logo.png" alt="logo" id="logo-img">
+            </div>
+        </div>
+
+        <!-- Menu Text -->
+        <div id="side-menu" class="opened">
+            <ul id="menu-list">
+                <li onclick="goVueDensemble()">Vue d'ensemble</li>
+                <li onclick="goTypology()">Typologie des supports</li>
+                <li onclick="goImpact()">Impact sur l'apprentissage</li>
+             </ul>
+             <h1 id="settings">Paramètres</h1>
+        </div>
+
+         <!-- Open/Close Button -->
+          <button id="pannel-button" class="close">
+            <i id="pannel-button-content" class="fa-solid fa-angle-left"></i>
+          </button>
+    </div>
+
+    <!-- Page Container -->
+    <div id="global-container">
+        <!-- Header -->
+         <div id="header">
+            <h2 class="global-title">Impact des jeux et supports ludiques sur l’enseignement du FLE</h2>
+            <h2 class="page-title">Vue d'ensemble</h2>
+            <img src="images/p1-img.jpg" alt="descriptive image with people talking" class="page-img">
+         </div>
+
+         <!-- Global data Section 1 -->
+          <div class="facts-section">
+            <div class="fact">Nombre d’études analysées : <b>34</b></div>
+            <div class="fact">Taux moyen d’amélioration : <b>+18%</b></div>
+            <div class="fact">Types de supports :
+                <ul id="games-types-list">
+                    <li>Jeux de rôles</li>
+                    <li>Jeux numériques</li>
+                    <li>Jeux de société</li>
+                    <li>Jeux à visée pédagogique</li>
+                </ul> 
+            </div>
+            <div class="fact">Taux moyen de satisfaction : <b>87%</b></div>
+          </div>
+
+          <!-- Global data Section 2 -->
+           <div class="charts-section">
+            <h2 class="section-title">Données-clés</h2>
+            <div class="charts-container">
+                
+                <div id="oral-expression" class="chart-card">
+                    <div class="chart">
+                        <h1 class="percent">60%</h1>
+                        <canvas id="p1-60percent-chart"></canvas>
+                    </div>
+                    <div class="chart-caption">
+                        des études montrent que <b>les jeux de rôle</b> sont les <b>plus efficaces</b> pour l'<b>expression orale</b>.
+                    </div>
+                </div>
+
+                <div id="global-progression" class="chart-card">
+                    <div class="chart">
+                        <h1 class="classic-percent">+18%</h1>
+                    </div>
+                    <div class="chart-caption">
+                        d’<b>amélioration des compétences</b> grâce aux jeux.
+                    </div>
+                </div>
+
+                <div id="video-games" class="chart-card">
+                    <div class="chart">
+                        <h1 class="percent">75%</h1>
+                        <canvas id="p1-75percent-chart2" width="380"
+                        height="180"></canvas>
+                    </div>
+                    <div class="chart-caption">
+                        des études montrent que les <b>jeux numériques</b> sont les plus <b>populaires</b>.
+                    </div>
+                </div>
+                
+            </div>
+           </div>
+
+           <!-- Text Section 3 -->
+            <div class="text-section">
+                <h2 class="section-title">Impact des Jeux et Supports Ludiques dans l'Apprentissage du FLE</h2>
+                <p>
+                    <b>Les jeux et supports ludiques</b> jouent <b>un rôle crucial</b> dans <b>l'amélioration des compétences</b> en français langue étrangère (FLE).
+                </p>
+                <p>
+                    En analysant les résultats de plus de 35 études récentes, il apparaît que <b>ces outils pédagogiques favorisent </b> non seulement <b>la motivation</b> des apprenants, mais aussi <b>leur progression dans des domaines clés</b> tels que la compréhension et l'expression orale. <b>Les jeux de rôle</b>, par exemple, sont <b>particulièrement efficaces</b> pour stimuler <b>la communication spontanée</b>, tandis que <b>les jeux numériques captivent</b> les apprenants grâce à leur interactivité.
+                </p>
+                <p>
+                    <b>L'usage régulier</b> de ces supports, souvent à une fréquence hebdomadaire, contribue donc <b>de manière significative à l'acquisition de compétences linguistiques tout en rendant l'apprentissage plus engageant et collaboratif</b>.
+                </p>
+
+                <!-- Disclaimer -->
+                <p class="disclaimer">
+                    Ces données sont fictives et ont uniquement servi comme contenu pour nourrir ce site.
+                </p>
+            </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact sur l'apprentissage</title>
+
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/charts.css">
+
+    <script src="scripts/pannel-button.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/p3-charts.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0/dist/chartjs-plugin-datalabels.min.js"></script>
+    <script src="https://kit.fontawesome.com/6e0742cd0f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <!-- Side Pannel -->
+    <div id="side-pannel" class="opened">
+        <!-- Logo -->
+        <div id="logo">
+            <div id="logo-circle">
+                <img src="images/logo.png" alt="logo" id="logo-img">
+            </div>
+        </div>
+
+        <!-- Menu Text -->
+        <div id="side-menu" class="opened">
+            <ul id="menu-list">
+                <li onclick="goVueDensemble()">Vue d'ensemble</li>
+                <li onclick="goTypology()">Typologie des supports</li>
+                <li onclick="goImpact()">Impact sur l'apprentissage</li>
+             </ul>
+             <h1 id="settings">Paramètres</h1>
+        </div>
+
+         <!-- Open/Close Button -->
+          <button id="pannel-button" class="close">
+            <i id="pannel-button-content" class="fa-solid fa-angle-left"></i>
+          </button>
+    </div>
+
+    <!-- Page Container -->
+    <div id="global-container">
+        <!-- Header -->
+        <div id="header">
+            <h2 class="global-title">Impact des jeux et supports ludiques sur l’enseignement du FLE</h2>
+            <h2 class="page-title">Impact sur l'apprentissage</h2>
+            <img src="images/p2-img.jpg" alt="descriptive image with people talking" class="page-img">
+        </div>
+
+        <div class="four-charts-section">
+            <h2 class="section-title">Progression après 6 mois d’usage hebdomadaire</h2>
+            <p class="disclaimer">
+                Par rapport à l’évolution constatée avec des supports classiques
+            </p>
+            <div class="legende-container">
+                <div class="color-patch" id="games"></div>
+                <p>Supports ludiques</p>
+                <div class="color-patch" id="classic"></div>
+                <p>Supports classiques</p>
+            </div>
+            
+            <div class="facts-section">
+                <div class="p3-chart">
+                    <canvas id="co"></canvas>
+                    <p class="p3-chart-caption">Amélioration de la compréhension orale</p>
+                </div>
+                <div class="p3-chart">
+                    <canvas id="po"></canvas>
+                    <p class="p3-chart-caption">Amélioration de la production orale</p>
+                </div>
+                <div class="p3-chart">
+                    <canvas id="ce"></canvas>
+                    <p class="p3-chart-caption">Amélioration de la compréhension écrite</p>
+                </div>
+                <div class="p3-chart">
+                    <canvas id="pe"></canvas>
+                    <p class="p3-chart-caption">Amélioration de la production écrite</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Text Section 3 -->
+        <div class="text-section">
+            <h2 class="section-title">Les jeux, un outil à l’efficacité prouvée </h2>
+            <p>
+                Les jeux ont <b>un impact significatif</b> sur l'amélioration des compétences en FLE, avec <b>une progression moyenne de 20% en compréhension orale</b>, selon les études analysées.
+            </p>
+            <p>
+                <b>Les jeux de rôle et les jeux numériques</b>, en particulier, permettent aux apprenants de <b>pratiquer et d'améliorer leur expression orale de manière dynamique</b>, tout en rendant l'apprentissage <b>plus motivant</b>.
+            </p>
+            <p>
+                Les graphiques montrent que <b>les apprenants utilisant des supports ludiques développent leurs compétences linguistiques plus rapidement</b> que ceux qui n'en utilisent pas, confirmant l'efficacité de ces outils pédagogiques.
+            </p>
+
+            <!-- Disclaimer -->
+            <p class="disclaimer">
+                Ces données sont fictives et ont uniquement servi comme contenu pour nourrir ce site.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
